@@ -1,7 +1,7 @@
 Package: PallasExplorer
 Type: Package
 Title: Sparql Graph construction and object Auto-suggestion 
-Version: 0.1.0
+Version: 0.0.0.9000
 Authors@R: c(
     person(
       "Ata", "Badr Barzegar",
