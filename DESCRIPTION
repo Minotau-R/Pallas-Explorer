@@ -1,16 +1,17 @@
 Package: PallasExplorer
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Bring a better insight over Sparql Endpoints thruogh Grap construction and object Auto-suggestion. 
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Ata", "Badr Barzegar",
+      email = "atabadrbarzegar@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: The main goal is to connect to SPARQL endpoints and bering their structure into the R worlds
+License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
 LazyData: true
