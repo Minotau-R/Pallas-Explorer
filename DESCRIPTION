@@ -17,4 +17,5 @@ RoxygenNote: 7.3.2
 LazyData: true
 Imports:
   tools,
-  httr2
+  httr2, 
+  stats
