@@ -1,7 +1,7 @@
 Package: PallasExplorer
 Type: Package
-Title: Bring a better insight over Sparql Endpoints thruogh Grap construction and object Auto-suggestion. 
-Version: 0.1.0
+Title: Sparql Graph construction and object Auto-suggestion 
+Version: 0.0.0.9000
 Authors@R: c(
     person(
       "Ata", "Badr Barzegar",
@@ -9,9 +9,16 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: The main goal is to connect to SPARQL endpoints and bering their structure into the R worlds
+Description: The main goal is to connect to SPARQL endpoints and bering their structure into the R world. This package would enable R developers to make a graph of RDF schemas in different endpoints and also access classes and properties with auto-suggestion mechanism enabled in R.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 LazyData: true
+Imports:
+  tools,
+  httr2, 
+  stats
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
