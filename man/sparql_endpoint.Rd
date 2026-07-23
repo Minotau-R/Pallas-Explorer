@@ -26,5 +26,5 @@ request (for example a custom \code{User-Agent}).}
 \description{
 The base S7 class every endpoint backend inherits from. You will
 not normally call \code{sparql_endpoint()} directly -- use a specific
-constructor like \code{\link[=new_generic_endpoint]{new_generic_endpoint()}}.
+constructor like \code{new_generic_endpoint()}.
 }

@@ -2,7 +2,7 @@
 #'
 #' The base S7 class every endpoint backend inherits from. You will
 #' not normally call `sparql_endpoint()` directly -- use a specific
-#' constructor like [new_generic_endpoint()].
+#' constructor like `new_generic_endpoint()`.
 #'
 #' @param url Character. The SPARQL endpoint URL (the address a query
 #'   is sent to).
