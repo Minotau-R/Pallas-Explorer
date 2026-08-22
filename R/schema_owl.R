@@ -191,8 +191,8 @@ extract_schema_owl <- function(source) {
   schema$property_domains   <- property_domains %>% filter(!is.na(domain)) %>% distinct()
   schema$property_ranges    <- property_ranges %>% filter(!is.na(range)) %>% distinct()
   schema$extra_edges        <- extra_edges %>% filter(!is.na(from), !is.na(to)) %>% distinct()
-  schema$union_intersection <- .extract_list_edges(source)
-  schema$restrictions       <- .extract_restrictions(source)
+  schema$union_intersection <- extract_list_edges(source)
+  schema$restrictions       <- extract_restrictions(source)
 
   schema
 }
