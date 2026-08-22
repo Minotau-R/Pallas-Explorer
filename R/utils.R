@@ -42,3 +42,34 @@ local_name <- function(uri) {
 #' normalize_scheme("https://schema.org/")
 #' @export
 normalize_scheme <- function(x) sub("^https://", "http://", x)
+
+
+.empty_schema <- function() {
+  list(
+    classes = data.frame(uri = character(), label = character(), stringsAsFactors = FALSE),
+    properties = data.frame(property = character(), label = character(), stringsAsFactors = FALSE),
+    subclass = data.frame(child = character(), parent = character(), stringsAsFactors = FALSE),
+    property_domains = data.frame(property = character(), domain = character(), stringsAsFactors = FALSE),
+    property_ranges = data.frame(property = character(), range = character(), stringsAsFactors = FALSE),
+    extra_edges = data.frame(from = character(), to = character(), relation = character(), stringsAsFactors = FALSE),
+    union_intersection = data.frame(from = character(), member = character(), relation = character(), stringsAsFactors = FALSE),
+    restrictions = data.frame(restriction = character(), onProperty = character(), target = character(),
+                              relation = character(), cardinality_label = character(), stringsAsFactors = FALSE)
+  )
+}
+
+#' @noRd
+.ensure_cols <- function(df, expected_cols) {
+  if (is.null(df) || !is.data.frame(df)) df <- data.frame()
+  if (nrow(df) == 0) {
+    return(as.data.frame(
+      setNames(rep(list(character(0)), length(expected_cols)), expected_cols),
+      stringsAsFactors = FALSE
+    ))
+  }
+  df <- as.data.frame(df, stringsAsFactors = FALSE)
+  for (col in expected_cols) {
+    if (!col %in% names(df)) df[[col]] <- NA_character_
+  }
+  df
+}
