@@ -43,7 +43,7 @@ local_name <- function(uri) {
 #' @export
 normalize_scheme <- function(x) sub("^https://", "http://", x)
 
-#' @noRd
+
 .empty_schema <- function() {
   list(
     classes = data.frame(uri = character(), label = character(), stringsAsFactors = FALSE),

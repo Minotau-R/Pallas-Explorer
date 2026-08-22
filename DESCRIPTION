@@ -18,7 +18,9 @@ Imports:
   S7,
   tools,
   httr2, 
-  stats
+  stats, 
+  dplyr, 
+  rdflib
 Suggests: 
     testthat (>= 3.0.0), 
     withr

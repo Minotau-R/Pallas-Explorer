@@ -64,13 +64,13 @@ extract_list_edges <- function(source) {
 
 #' Extract owl:Restriction axioms
 #'
-#' Captures the restricted property (`owl:onProperty`), the restriction kind
+#' Captures the restricted property owl:onProperty, the restriction kind
 #' (someValuesFrom/allValuesFrom/hasValue/onClass), and a human-readable
 #' cardinality label when a cardinality constraint is present.
 #'
 #' @param source A SPARQL endpoint URL or a parsed rdflib compatible file.
-#' @return A data frame with columns `restriction`, `onProperty`, `target`,
-#'   `relation`, `cardinality_label`.
+#' @return A data frame with columns 'restriction', 'onProperty', 'target',
+#'   'relation', 'cardinality_label'.
 #' @export
 extract_restrictions <- function(source) {
   cols <- c("restriction", "onProperty", "target", "relation", "cardinality",
@@ -127,7 +127,7 @@ extract_restrictions <- function(source) {
 #' Extract a schema from an OWL ontology
 #'
 #' @param source A SPARQL endpoint URL or a parsed rdflib compatible file.
-#' @return A schema list, see [.empty_schema()].
+#' @return A schema list, see empty_schema().
 #' @export
 extract_schema_owl <- function(source) {
   schema <- .empty_schema()
