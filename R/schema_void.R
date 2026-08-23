@@ -5,7 +5,7 @@ NULL
 #' Extract a schema from a VoID dataset description,extracted information
 #'
 #' @param source A SPARQL endpoint URL or a parsed rdflib file.
-#' @return A schema list, see [.empty_schema()]; only `classes` and
+#' @return A schema list, see `.empty_schema()`; only `classes` and
 #'   `properties` are populated.
 #' @export
 extract_schema_void <- function(source) {

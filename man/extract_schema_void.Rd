@@ -10,7 +10,7 @@ extract_schema_void(source)
 \item{source}{A SPARQL endpoint URL or a parsed rdflib file.}
 }
 \value{
-A schema list, see \code{\link[=.empty_schema]{.empty_schema()}}; only \code{classes} and
+A schema list, see \code{.empty_schema()}; only \code{classes} and
 \code{properties} are populated.
 }
 \description{
