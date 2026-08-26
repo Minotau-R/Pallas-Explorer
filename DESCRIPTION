@@ -20,10 +20,12 @@ Imports:
   httr2, 
   stats, 
   dplyr, 
-  rdflib
+  rdflib, 
+  igraph
 Suggests: 
     testthat (>= 3.0.0), 
-    withr
+    withr, 
+    visNetwork
 Config/testthat/edition: 3
 Depends: 
     R (>= 4.3)
